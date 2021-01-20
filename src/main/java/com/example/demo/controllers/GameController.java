@@ -27,6 +27,7 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
+    //this methos list all games on de DB
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public Iterable<GameModel> listAll(){
         return this.gameService.listAll();
